@@ -414,7 +414,7 @@ textarea:hover{
     }
 }
 
-@media(max-width:450px){
+@media(max-width:420px){
     html{
         font-size: 50%;
     }
