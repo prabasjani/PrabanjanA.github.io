@@ -1,0 +1,424 @@
+/* CSS Reset section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --font-color: #fdf507ed;
+}
+a{
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background: #0B141E;
+    color: #fff;
+}
+/* Header section */
+.header{
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--font-color);
+}
+.menu-bar a{
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+    transition: 0.4s ease;
+}
+.menu-bar a:hover{
+    color: var(--font-color);
+}
+#menu-btn{
+    font-size: 3rem;
+    display: none;
+}
+section{
+    margin: 0;
+    padding: 10rem 8%;
+    min-height: 100vh;
+}
+
+/* Home section */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-bio h3{
+    font-size: 2.5rem;
+}
+span{
+    color: var(--font-color);
+}
+.home-bio h1{
+    font-size: 3.5rem;
+    line-height: 1.4;
+}
+.home-bio p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.profile-picture img{
+    width: 30vw;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.social-media a{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.8rem;
+    margin: 1rem 1rem 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+.social-media a:hover{
+    color: var(--font-color);
+    box-shadow: 0 0 1rem var(--font-color);
+}
+.btn{
+    display: inline-block;
+    background: var(--font-color);
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    border-radius: 1.3rem;
+    font-size: 1.8rem;
+    color: #000;
+    font-weight: 600;
+    transition: 0.4s ease;
+}
+.btn:hover{
+    color: var(--font-color);
+    background: #000;
+    box-shadow: 0 0 1rem var(--font-color);
+    transition: 0.4s ease;
+}
+
+/* About section */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+.about-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.about-resume h3{
+    font-size: 2.4rem;
+}
+.about-text p{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+
+
+/* Skills section */
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+.skill-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.skill-card:hover{
+    box-shadow: 0 0 1rem var(--font-color);
+    border-radius: 1rem solid;
+    transform: scale(1.05);
+}
+.skill-card .bx{
+    font-size: 8rem;
+    transition: 0.4s ease;
+}
+.skill-card .bx:hover{
+    color: var(--font-color);
+}
+.skill-card h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+.skill-card p{
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+/* Projects section */
+/* Contact section */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+}
+form{
+    display: grid;
+    row-gap: 1rem;
+}
+form input,textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    resize: none;
+}
+form input:hover{
+    box-shadow: 0 0 1rem var(--font-color);
+}
+textarea:hover{
+    box-shadow: 0 0 1rem var(--font-color);
+}
+.hide{
+    display: none;
+}
+.contact-details {
+    display: block;
+    margin: 0px 50px;
+}
+.contact-details h2{
+    font-size: 28px;
+    text-align: center;
+}
+.contact-details .contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
+.contact-icons .social-media{
+    display: flex;
+    text-align: center;
+    justify-content: space-between; 
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.contact-icons .social-media a{
+    text-decoration: none;
+    padding: 20px 30px;
+    margin: 10px 20px;
+}
+.contact-icons .social-media .bx{
+    position: relative;
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0px 25px;
+    box-shadow: 0px 0px 2px 2px rgba(100,100,100,0.5);
+    transition: all 0.4s ease;
+}
+/* social-media own color patterns */
+.contact-icons .social-media .bx.bxs-phone-call{
+    background: #fff;
+    color: #0b3cc1;
+}
+.contact-icons .social-media .bx.bxl-whatsapp{
+    background:	#25D366;
+    color: white;
+}
+.contact-icons .social-media .bx.bxl-telegram{
+    background: #0088cc;
+    color: white;
+}
+.contact-icons .social-media .bx.bxl-github{
+    background: #fff;
+    color: #000;
+}
+.contact-icons .social-media .bx.bxl-linkedin{
+    background: #0A66C2;
+    color: white;
+}
+.contact-icons .social-media .bx.bxl-gmail{
+    background: #fff;
+    color: #D44638;
+}
+.contact-icons .social-media .bx.bxl-youtube{
+    background: #FF0000;
+    color: white;
+}
+.contact-icons .social-media .bx.bxl-instagram{
+    background: linear-gradient(#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    color: white;
+}
+.contact-icons .social-media .bx.bxl-facebook{
+    background: linear-gradient(#0165E1,#17A9FD);
+    color: white;
+}
+.contact-icons .social-media .bx:hover{
+    transform: scale(1.2);
+    transition: 0.4s ease all;
+}
+/* .contact-details .touch{
+    font-size: 3rem;
+    margin: 1.5rem 9rem;
+}
+.contact-details .detail{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    margin: 0 7rem;
+    transition: 0.4s ease;
+}
+.contact-details .detail:hover{
+    transform: scale(1.05);
+    border-bottom: 2px solid var(--font-color);
+}
+.contact-details .detail .bx{
+    font-size: 3.5rem;
+    margin: 1rem 2rem;
+} */
+
+/* Footer section */
+/* Responsive section */
+
+@media(max-width:1200px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media(max-width:992px){
+    .header{
+        padding: 2rem 4%;
+    }
+    .home img{
+        width: 40vw;
+    }
+}
+
+@media(max-width:767px){
+    #menu-btn{
+        display: block;
+    }
+    .menu-bar{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background: rgba(0,0,0,0.9);
+        display: none;
+    }
+    .menu-bar.active{
+        display: block;
+    }
+    .menu-bar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    .home, .about-items{
+        flex-direction: column;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .skills-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .contact-details form textarea .contact-icons{
+        font-size: 1.5rem;
+        margin: 1rem 4rem;
+    }
+    .contact-details .contact-icons .social-media{
+        font-size: 2.5rem;
+        margin: 1rem 1rem;
+    }
+    /* .contact-details .touch{
+        font-size: 2rem;
+        margin: 1rem 5rem;
+    } */
+}
+
+@media(max-width:620px){
+    .skills-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .heading{
+        font-size: 2.7rem;
+    }
+    .contact-items{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .contact-details .contact-icons{
+        margin: 1rem 9rem;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+     .contact-details form textarea .contact-icons{
+        margin: 1rem 7rem;
+    }
+}
