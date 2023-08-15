@@ -218,7 +218,7 @@ h5{
     grid-template-columns: repeat(2,1fr);
     gap: 4rem;
 }
-form{
+.contact-form form{
     display: grid;
     row-gap: 1rem;
 }
@@ -398,7 +398,7 @@ textarea:hover{
     } */
 }
 
-@media(max-width:620px){
+@media(max-width:600px){
     .skills-items{
         grid-template-columns: repeat(1,1fr);
     }
@@ -414,11 +414,27 @@ textarea:hover{
     }
 }
 
-@media(max-width:360px){
+@media(max-width:470px){
     html{
         font-size: 50%;
     }
-     .contact-details .contact-icons{
-        margin: 1rem 8rem;
+    body{
+        padding: 20px 20px;
+        overflow-x: hidden;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+    .contact-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact-form form{
+        width: 50%;
+        margin: 0px 150px;
+    }
+    .contact-icons .social-media .bx{
+        
     }
 }
+    
