@@ -418,7 +418,7 @@ textarea:hover{
     html{
         font-size: 50%;
     }
-     .contact-details form textarea .contact-icons{
+     .contact-details .contact-icons{
         margin: 1rem 7rem;
     }
 }
