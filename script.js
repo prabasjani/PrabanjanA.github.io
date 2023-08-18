@@ -24,7 +24,7 @@ ScrollReveal({
     delay:200
 });
 
-ScrollReveal().reveal('.home-bio h1 , .about-resume, h5', { origin:'left'});
+ScrollReveal().reveal('.home-bio h1 , .about-resume, h5, .project-box', { origin:'left'});
 ScrollReveal().reveal('.home-bio p, .heading', { origin:'right'});
 ScrollReveal().reveal('.home-bio, .contact-details', { origin:'top'});
 ScrollReveal().reveal('.profile-picture, .about-items, .skills-items, .form', { origin:'bottom'});
