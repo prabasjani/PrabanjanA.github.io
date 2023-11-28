@@ -244,7 +244,7 @@ h5{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 480px;
+    height: 420px;
     width: 400px;
     border: 2px solid #fff;
     border-radius: 4px;
@@ -267,12 +267,12 @@ h5{
     border-radius: 4px;
 }
 .project-box .project-logo img{
-    width: 250px;
+    width: 220px;
 }
 .project-box .project-info{
     padding: 10px;
     position: absolute;
-    bottom: 7px;
+    bottom: 15px;
 }
 .project-info h2{
     font-size: 18px;
